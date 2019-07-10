@@ -1,0 +1,10 @@
+package invictus
+
+import (
+	"github.com/veandco/go-sdl2/sdl"
+)
+
+func dRect(renderer *sdl.Renderer, x,y,w,h int32) {
+	renderer.SetDrawColor(BLUE.toi())
+	renderer.FillRect(&sdl.Rect{x,y,w,h})
+}
