@@ -81,3 +81,14 @@ func Dtex(tex *sdl.Texture, where *Rect, what *Rect, angle float64, center *Poin
 func Sdtex(tex *sdl.Texture, where *Rect) {
 	Dtex(tex, where, nil, 0, nil, 0)
 }
+
+func Dentf(ef EntityFrame, where *Rect, angle float64, center *Point, flip int32) {
+	Dtex(ef.Texture, where, ef.What, angle, center, flip)
+}
+
+func Quit(exitCode int) {
+	Renderer.Destroy()
+	Window.Destroy()
+	sdl.Quit()
+	os.Exit(exitCode)
+}

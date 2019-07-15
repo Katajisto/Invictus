@@ -1,0 +1,9 @@
+package main
+
+import(
+
+)
+
+func init() {
+	var playerAnim []&Rect
+}

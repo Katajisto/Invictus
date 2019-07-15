@@ -1,0 +1,8 @@
+package main
+
+type Animation struct {
+	frames []rect
+	duration int32
+}
+
+type Antity

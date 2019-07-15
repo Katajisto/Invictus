@@ -14,7 +14,14 @@ func Init(title string, w,h int32) {
 		os.Exit(1)
 	}
 	windowAndRenderer(title, w, h)
+	initPlayer()
 }
+
+
+func Tick() {
+	animTick()
+}
+
 
 var Window *sdl.Window
 var Renderer *sdl.Renderer
