@@ -1,4 +1,4 @@
-package main
+package invictus
 
 type Color struct {
 	R uint8

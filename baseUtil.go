@@ -1,4 +1,4 @@
-package main
+package invictus
 
 import(
 	"os"
@@ -14,7 +14,6 @@ func Init(title string, w,h int32) {
 		os.Exit(1)
 	}
 	windowAndRenderer(title, w, h)
-	initPlayer()
 }
 
 

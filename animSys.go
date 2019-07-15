@@ -1,4 +1,4 @@
-package main
+package invictus
 
 import(
 	"github.com/veandco/go-sdl2/sdl"

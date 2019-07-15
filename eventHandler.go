@@ -1,4 +1,4 @@
-package main
+package invictus
 
 //Contains the functions related to event handling (including input)
 
