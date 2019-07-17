@@ -1,0 +1,18 @@
+package invictus
+
+type PhysRect struct {
+	PosX int32
+	PosY int32
+	W    int32
+	H    int32
+}
+
+func (p PhysRect) X(a PhysRect) bool {
+	AX1, AX2, AY1, AY2 := p.PosX, p.PosX + p.W, p.PosY, p.PosY + p.H
+	BX1, BX2, BY1, BY2 := a.PosX, a.PosX + a.W, a.PosY, a.PosY + a.H
+
+	if AX1 < BX2 && AX2 > BX1 && AY1 < BY2 && AY2 > BY1 {
+		return true 
+	}
+	return false
+}

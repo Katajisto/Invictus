@@ -17,6 +17,10 @@ func Init(title string, w,h int32) {
 }
 
 
+func Log(a ...interface{})  {
+	fmt.Println(a...)
+}
+
 func Tick() {
 	animTick()
 }
