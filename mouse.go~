@@ -1,0 +1,9 @@
+package invictus
+
+import(
+	"github.com/veandco/go-sdl2/sdl"
+)
+
+func RelativeMouseState() (x,y,s int32) {
+	
+}
